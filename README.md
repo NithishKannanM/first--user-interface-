@@ -27,7 +27,7 @@ This project is a sleek, modern **Login Interface** built using **HTML**, **CSS*
 
 ## 📸 Screenshot
 
-![Login UI Screenshot](./screenshot.png)
+![Login UI Screenshot](./Screenshot 2025-07-05 191604.png)
 
 > *Replace the image above with your actual screenshot.*
 
