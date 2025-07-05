@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 20px 100px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+}
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 5px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+    
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navigation .btnlogin_popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnlogin_popup:hover{
+    background: #fff;
+    color: #000;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    margin-top: 100px;
+    height: 460px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px 30px;
+}
+.wrapper .form-box h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.wrapper .form-box .input-box{
+    position: relative;
+    width: 100%;
+    height: 57px;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+    padding-bottom: 20px;
+    padding: 0 35px 0 5px;
+}
+.wrapper .form-box.register{
+    position: absolute;
+    transform: translateX(400px);
+}
+.input-box label{
+    position: absolute;
+    top: 16px;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+    font-size: 0.85em;
+    color: #aaa;
+}
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 57px;
+}
+.input-box input{  
+    position: absolute;
+    top: 16px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+    transform: translateY(-50%);
+    padding: 0 35px 0 5px;
+    transition: .5s;
+}
+.wrapper .form-box .remember-forgot{
+    font-size: .9em;
+    color: #fff;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: #000;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.btn:hover{
+    background: #000;
+    color: #fff;
+}
+.wrapper .form-box .login-register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.login-register p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 18px;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+.wrapper .icon-close:hover{
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    border-radius: 18px;
+}
