@@ -29,7 +29,6 @@ This project is a sleek, modern **Login Interface** built using **HTML**, **CSS*
 
 ![Login UI Screenshot](./Screenshot.png)
 
-> *Replace the image above with your actual screenshot.*
 
 ---
 
@@ -47,7 +46,7 @@ This project is a sleek, modern **Login Interface** built using **HTML**, **CSS*
 1. Clone this repository:
 2. Open the folder in VS Code (or your editor).
 3. Right-click on `index.html` and choose **"Open with Live Server"**  
-*(or simply open the file in a browser)*
+
 
 ---
 
